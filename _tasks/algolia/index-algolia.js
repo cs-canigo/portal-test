@@ -8,8 +8,8 @@ var fs = require("fs");
 var request = require('request');
 
 var algoliasearch = require('algoliasearch');
-var client = algoliasearch('SQZ0PDH35B', process.env.ALGOLIA_API_KEY);
-var algolia = client.initIndex('prod_ARQUITECTURA');
+var client = algoliasearch('5KPE49FFYZ', process.env.ALGOLIA_API_KEY);
+var algolia = client.initIndex('test_ARQUITECTURA');
 
 algolia.setSettings({
 	'removeStopWords':[true,'ca']
@@ -35,7 +35,7 @@ if (!fs.existsSync(_indexDir)){
 }
 
 //gets current index
-request('https://raw.githubusercontent.com/cs-canigo/portal/gh-pages/index.json', function (error, response, body) {
+request('https://cs-canigo.github.io/portal-test/index.json', function (error, response, body) {
 	if(fs.existsSync(_indexDir+"index.json")){
 		fs.unlinkSync(_indexDir+"index.json");
 	}

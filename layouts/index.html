@@ -55,12 +55,12 @@
 				            <!-- range first .Site.Params.noticieshome (where .Data.Pages "Section" "noticies") -->
 
 					        {{ range $key, $taxonomy := .Site.Taxonomies.sections }}
-					        {{ if eq $key "home" }} 
-							{{ range first $.Site.Params.noticieshome ($taxonomy.Pages) }} 
+					        {{ if eq $key "home" }}
+							{{ range first $.Site.Params.noticieshome ($taxonomy.Pages) }}
 								<li>
 									<a href="{{ if (isset .Params "enllac") }}{{ .Params.enllac }}{{ else }}{{ .Permalink }}{{ end }}" class="a-vermell">
 									{{ if eq .Section "blog" }}
-										BLOG. 
+										BLOG.
 									{{ end }}
 									{{ .Title }}</a> ({{ .Date.Format "02-01-2006" }})
 									<p>{{ .Description }}<br /><br /></p>
