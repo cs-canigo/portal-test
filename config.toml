@@ -5,8 +5,8 @@ contentDir = "content"
 layoutDir = "layouts"
 publishDir = "public"
 buildDrafts = true
-baseURL = "https://canigo.ctti.gencat.cat"
-canonifyURLs = false
+baseURL = "https://cs-canigo.github.io/portal-test/"
+canonifyURLs = true
 disqusShortname = "arquitectura-ctti"
 pluralizelisttitles = false
 disablePathToLower = true
@@ -17,7 +17,7 @@ Paginate = 10
 [params]
 	noticieshome = 10
 	destacatshome = 4
-	google_analytics_id = "UA-59408075-1"
+    google_analytics_id = "UA-12345678-1"
 	titol = "Centre de Telecomunicacions i Tecnologies de la Informació"
 	subtitol = "Arquitectura CTTI"
 	blog_section = "blog"
@@ -101,7 +101,7 @@ Paginate = 10
     Weight = 21
     Identifier = "rpa"
     URL = "/rpa"
-    
+
 [[menu.main]]
 	Name = "APIM"
     Weight = 23
