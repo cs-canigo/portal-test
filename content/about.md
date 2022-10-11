@@ -1,5 +1,5 @@
 +++
-date        = "2022-09-20"
+date        = "2022-10-11"
 title       = "About Github-Actions"
 description = "Pàgina de test per validar reindexació amb Algolia"
 weight      = 1
