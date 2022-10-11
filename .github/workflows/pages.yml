@@ -28,6 +28,7 @@ defaults:
 jobs:
   # Build job
   build:
+    environment: github-pages
     runs-on: ubuntu-20.04
     env:
       NVM_VERSION: 0.39.1
