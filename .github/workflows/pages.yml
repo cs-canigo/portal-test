@@ -59,6 +59,7 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
+            -vvvv \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Index with Algolia
